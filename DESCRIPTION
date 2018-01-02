@@ -1,4 +1,4 @@
-Package: mpoly
+Package: Rcppmpoly
 Type: Package
 Title: Symbolic Computation and More with Multivariate Polynomials
 Version: 1.0.5.902

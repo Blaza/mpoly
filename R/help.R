@@ -18,6 +18,6 @@
 #'   jacobi.p.polynomials legendre.polynomials
 #' @importFrom tidyr gather
 #' @docType package
-#' @name mpoly
-#' @aliases mpoly package-mpoly
+#' @name Rcppmpoly
+#' @aliases Rcppmpoly package-Rcppmpoly
 NULL
