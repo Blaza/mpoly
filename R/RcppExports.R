@@ -2,14 +2,14 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 reducePoly <- function(poly, vars) {
-    .Call('_mpoly_reducePoly', PACKAGE = 'mpoly', poly, vars)
+    .Call('_Rcppmpoly_reducePoly', PACKAGE = 'Rcppmpoly', poly, vars)
 }
 
 mpolyMult <- function(e1, e2) {
-    .Call('_mpoly_mpolyMult', PACKAGE = 'mpoly', e1, e2)
+    .Call('_Rcppmpoly_mpolyMult', PACKAGE = 'Rcppmpoly', e1, e2)
 }
 
 mpolyPow <- function(e1, e2) {
-    .Call('_mpoly_mpolyPow', PACKAGE = 'mpoly', e1, e2)
+    .Call('_Rcppmpoly_mpolyPow', PACKAGE = 'Rcppmpoly', e1, e2)
 }
 

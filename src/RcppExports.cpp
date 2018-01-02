@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // reducePoly
 List reducePoly(const List& poly, const CharacterVector& vars);
-RcppExport SEXP _mpoly_reducePoly(SEXP polySEXP, SEXP varsSEXP) {
+RcppExport SEXP _Rcppmpoly_reducePoly(SEXP polySEXP, SEXP varsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // mpolyMult
 List mpolyMult(const List& e1, const List& e2);
-RcppExport SEXP _mpoly_mpolyMult(SEXP e1SEXP, SEXP e2SEXP) {
+RcppExport SEXP _Rcppmpoly_mpolyMult(SEXP e1SEXP, SEXP e2SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -31,7 +31,7 @@ END_RCPP
 }
 // mpolyPow
 List mpolyPow(const List& e1, int e2);
-RcppExport SEXP _mpoly_mpolyPow(SEXP e1SEXP, SEXP e2SEXP) {
+RcppExport SEXP _Rcppmpoly_mpolyPow(SEXP e1SEXP, SEXP e2SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -43,13 +43,13 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_mpoly_reducePoly", (DL_FUNC) &_mpoly_reducePoly, 2},
-    {"_mpoly_mpolyMult", (DL_FUNC) &_mpoly_mpolyMult, 2},
-    {"_mpoly_mpolyPow", (DL_FUNC) &_mpoly_mpolyPow, 2},
+    {"_Rcppmpoly_reducePoly", (DL_FUNC) &_Rcppmpoly_reducePoly, 2},
+    {"_Rcppmpoly_mpolyMult", (DL_FUNC) &_Rcppmpoly_mpolyMult, 2},
+    {"_Rcppmpoly_mpolyPow", (DL_FUNC) &_Rcppmpoly_mpolyPow, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_mpoly(DllInfo *dll) {
+RcppExport void R_init_Rcppmpoly(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
